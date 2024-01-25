@@ -1,17 +1,17 @@
 import telebot
 import random
 
-token = '6577276765:AAGj5Ukj-4k0FH_kyHlFia3SzN92v6nalik'
+token = '777777777'
 bot = telebot.TeleBot(token)
 
 @bot.message_handler(commands=['start'])
 def start_message(message):
-    bot.send_message(message.chat.id, "Меня зовут Простой Парень и я здесь, чтобы дарить тебе радость. А делать это буду мемами. Поехали?")
+    bot.send_message(message.chat.id, "Меня зовут Бот и я здесь, чтобы дарить тебе радость. А делать это буду мемами. Поехали?")
     
 @bot.message_handler(commands=['random_message'])
 def send_random_message(message):
     # ID канала, из которого нужно брать случайное сообщение
-    channel_id = '-1001574458753'
+    channel_id = '8999999999'
     
     # Получаем случайное сообщение из канала
     random_message_id = random.randint(1, 1000)
